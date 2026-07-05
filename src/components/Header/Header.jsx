@@ -1,6 +1,6 @@
 import "./Header.css";
 import { FaDownload } from "react-icons/fa";
-import patrika from "../../assets/patrika.png";
+import patrika from "../../assets/Patrika.png";
 
 export default function Header() {
 
