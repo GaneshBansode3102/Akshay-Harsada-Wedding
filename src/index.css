@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Great+Vibes&family=Poppins:wght@300;400;500;600&display=swap");
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  overflow-x:hidden;
+  font-family:"Poppins",sans-serif;
+  color:#444;
+
+  background: 
+  radial-gradient(circle at top left,#fff8dc 0%,transparent 35%),
+  radial-gradient(circle at bottom right,#f7e7ce 0%,transparent 35%),
+  #fcfaf5;
+
+  /* background-attachment:fixed; */
+}
+
+section{
+  position:relative;
+  overflow:hidden;
+}
+
+img{
+  display:block;
+  max-width:100%;
+}
+
+
+@media (max-width:768px){
+  body{
+    background-attachment: scroll;
+  }
+}

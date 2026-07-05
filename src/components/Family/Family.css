@@ -1,0 +1,114 @@
+.family{
+    padding:100px 20px;
+    background:linear-gradient(180deg,#fffdf9,#fff7ef);
+    position:relative;
+}
+
+.family h2{
+    text-align:center;
+    font-size:52px;
+    font-family:"Cinzel",serif;
+    color:#7d1733;
+    margin-bottom:60px;
+}
+
+.family-grid{
+    max-width:1100px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:35px;
+}
+
+.family-card{
+    background:rgba(255,255,255,.9);
+    backdrop-filter:blur(10px);
+    border:1px solid rgba(212,175,55,.25);
+    border-radius:28px;
+    padding:40px 30px;
+    text-align:center;
+    transition:.4s;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+    position:relative;
+    overflow:hidden;
+}
+
+.family-card::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:5px;
+    background:linear-gradient(to right,#d4af37,#b8860b);
+}
+
+.family-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 25px 55px rgba(0,0,0,.15);
+}
+
+.family-avatar{
+    width:90px;
+    height:90px;
+    margin:0 auto 20px;
+    border-radius:50%;
+    background:linear-gradient(135deg,#d4af37,#b8860b);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:40px;
+    color:#fff;
+}
+
+.family-card h3{
+    font-size:30px;
+    color:#7d1733;
+    font-family:"Cinzel",serif;
+    margin-bottom:15px;
+}
+
+.gold-line{
+    width:90px;
+    height:2px;
+    background:#d4af37;
+    margin:18px auto 25px;
+}
+
+.family-card p{
+    margin:12px 0;
+    font-size:17px;
+    color:#555;
+    line-height:1.8;
+    font-family:"Poppins",sans-serif;
+}
+
+@media(max-width:768px){
+
+.family{
+    padding:70px 15px;
+}
+
+.family h2{
+    font-size:36px;
+}
+
+.family-card{
+    padding:30px 20px;
+}
+
+.family-avatar{
+    width:70px;
+    height:70px;
+    font-size:32px;
+}
+
+.family-card h3{
+    font-size:24px;
+}
+
+.family-card p{
+    font-size:15px;
+}
+
+}

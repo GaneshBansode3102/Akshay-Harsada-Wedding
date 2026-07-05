@@ -1,0 +1,58 @@
+.loader-screen{
+    position:fixed;
+    inset:0;
+    background:linear-gradient(180deg,#edf6de,#fff9f0);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:99999;
+}
+
+.loader-card{
+    width:min(92%,420px);
+    background:white;
+    border-radius:28px;
+    padding:45px 30px;
+    text-align:center;
+    box-shadow:0 20px 50px rgba(0,0,0,.12);
+    border:1px solid rgba(212,175,55,.3);
+}
+
+.loader-flower{
+    font-size:55px;
+    margin-bottom:20px;
+}
+
+.loader-card h1{
+    font-family:"Alex Brush", cursive !important;
+    font-size:58px;
+    color:#7d1733;
+    font-weight:400;
+}
+
+.loader-card span{
+    font-size:30px;
+    color:#d04d65;
+}
+
+.loader-card p{
+    margin:25px 0;
+    color:#666;
+    line-height:1.8;
+    font-family:"Poppins";
+}
+
+.loader-card button{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:40px;
+    background:linear-gradient(90deg,#d4af37,#b8860b);
+    color:white;
+    font-size:17px;
+    cursor:pointer;
+}
+
+.loader-card button:hover{
+    opacity:.9;
+}
