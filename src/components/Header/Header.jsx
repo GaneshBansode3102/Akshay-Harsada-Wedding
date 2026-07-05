@@ -4,14 +4,22 @@ import patrika from "../../assets/Patrika.png";
 
 export default function Header() {
 
-  const downloadInvitation = () => {
-    const link = document.createElement("a");
-    link.href = patrika;
-    link.download = "Akshay-Harshada-Wedding-Invitation.png";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
+const downloadInvitation = async () => {
+  const response = await fetch(patrika);
+  const blob = await response.blob();
+
+  const url = window.URL.createObjectURL(blob);
+
+  const link = document.createElement("a");
+  link.href = url;
+  link.download = "Akshay-Harshada-Wedding-Invitation.png";
+
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+
+  window.URL.revokeObjectURL(url);
+};
 
   return (
     <header className="header">
