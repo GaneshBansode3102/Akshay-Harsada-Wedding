@@ -1,25 +1,18 @@
 import "./Header.css";
 import { FaDownload } from "react-icons/fa";
-import patrika from "../../assets/Patrika.png";
 
 export default function Header() {
 
-const downloadInvitation = async () => {
-  const response = await fetch(patrika);
-  const blob = await response.blob();
+  const downloadInvitation = () => {
+    const link = document.createElement("a");
 
-  const url = window.URL.createObjectURL(blob);
+    link.href = "/Patrika.png"; // public folder मधून
+    link.download = "Akshay-Harshada-Wedding-Invitation.png";
 
-  const link = document.createElement("a");
-  link.href = url;
-  link.download = "Akshay-Harshada-Wedding-Invitation.png";
-
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
-
-  window.URL.revokeObjectURL(url);
-};
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
   return (
     <header className="header">
